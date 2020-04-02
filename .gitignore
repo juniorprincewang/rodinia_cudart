@@ -1,0 +1,8 @@
+*.o
+*.swp
+*.run
+*.cpu
+*.gpu
+*.out
+*.ii
+data

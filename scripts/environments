@@ -1,0 +1,9 @@
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+if [ -z "$DATA_DIR" ]
+then
+    export DATA_DIR=${DIR}/../data
+fi
+
+WARMUP_TIMES=3
+EVAL_TIMES=10

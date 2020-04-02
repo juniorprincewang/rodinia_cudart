@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -z "$DATA_DIR" ]
+then
+	DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+    export DATA_DIR=${DIR}/../../data
+fi
+
+./nn.out filelist_4 -r 5 -lat 30 -lng 90 -f ${DATA_DIR}

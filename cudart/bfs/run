@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -z "$DATA_DIR" ]
+then
+	DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+    export DATA_DIR=${DIR}/../../data
+fi
+
+./bfs.out ${DATA_DIR}/bfs/graph65536.txt

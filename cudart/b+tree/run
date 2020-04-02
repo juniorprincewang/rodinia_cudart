@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -z "$DATA_DIR" ]
+then
+	DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+    export DATA_DIR=${DIR}/../../data
+fi
+
+./b+tree.out file ${DATA_DIR}/b+tree/mil.txt command ${DATA_DIR}/b+tree/command.txt

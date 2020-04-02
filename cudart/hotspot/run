@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -z "$DATA_DIR" ]
+then
+	DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+    export DATA_DIR=${DIR}/../../data
+fi
+
+./hotspot.out 1024 4 10000 ${DATA_DIR}/hotspot/temp_1024 ${DATA_DIR}/hotspot/power_1024 output.out

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z "$DATA_DIR" ]
+then
+	DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+    export DATA_DIR=${DIR}/../../data
+fi
+
+#./gaussian -f ${DATA_DIR}/gaussian/matrix4.txt
+./gaussian.out -s 2048
