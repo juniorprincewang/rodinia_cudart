@@ -2,9 +2,10 @@
 
 source environments
 
-bm="backprop   bfs      b+tree dwt2d gaussian hotspot particlefilter \
-    lavaMD     lud     myocyte nn    nw        \
-    pathfinder srad_v1 srad_v2 streamcluster"
+# srad_v2 particlefilter cause unknow error
+bm="backprop   bfs      b+tree dwt2d gaussian heartwall hotspot \
+    lavaMD     lud      myocyte nn    nw        \
+    pathfinder srad_v1  streamcluster"
 
 
 CUDART_DIR=$DIR/../cudart
